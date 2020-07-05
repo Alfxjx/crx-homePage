@@ -1,5 +1,7 @@
-# vue-extension-template
-`vue-cli3` + `webpack4` + `element-ui`  实现编译打包Chrome浏览器插件
+# HomePage.crx
+`vue-cli3` + `webpack4` + `element-ui`  实现编译打包Chrome浏览器主页插件
+
+**基于[此项目展开]( https://github.com/jue/vue-extension-template )**
 
 ## 环境安装
 ```
