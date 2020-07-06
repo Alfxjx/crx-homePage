@@ -1,14 +1,18 @@
 {
-    "manifest_version": 2,
-    "name": "vue-extension",
-    "description": "chrome插件扩展demo",
-    "version": "0.0.1",
-    "options_page": "options.html",
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-    "chrome_url_overrides":{
-      "newtab":"newtab.html"
-    },
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "manifest_version": 2,
+  "name": "vue-extension",
+  "description": "chrome插件扩展demo",
+  "version": "0.0.1",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
