@@ -29,7 +29,7 @@ async function _getBackgroundImageFromBing() {
 // 天气api
 async function _getWeatherState(city) {
   const appKey = "b41051aa16322b5dcc0b49fa57378d4b";
-  let weatherQuery = `https://way.jd.com/he/freeweather?city=beijing&appkey=${appKey}&city=${city}`;
+  let weatherQuery = `https://way.jd.com/he/freeweather?city=${city}&appkey=${appKey}`;
   let resJson = await fetch(weatherQuery).then(res=>{
     return res.json();
   }).then(res=>{
